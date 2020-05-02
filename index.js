@@ -18,6 +18,11 @@ app.get("/", (req, res) => {
     });
 });
 
+// create about page route
+app.get("/about2.html", (req, res) => {
+    res.render("about");
+});
+
 // set static folder (http://localhost:5000/)
 app.use(express.static(path.join(__dirname, "public")));
 
